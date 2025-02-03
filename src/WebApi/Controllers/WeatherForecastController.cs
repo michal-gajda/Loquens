@@ -3,7 +3,7 @@ namespace Loquens.WebApi.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController, Route("[controller]")]
-public partial class WeatherForecastController(ILogger<WeatherForecastController> logger) : ControllerBase
+public sealed partial class WeatherForecastController(ILogger<WeatherForecastController> logger) : ControllerBase
 {
     private const int RANGE = 10;
 
