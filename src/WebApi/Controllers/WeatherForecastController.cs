@@ -24,6 +24,6 @@ public partial class WeatherForecastController(ILogger<WeatherForecastController
         .ToArray();
     }
 
-    [LoggerMessage(LogLevel.Information, Message = "Ping {range}", SkipEnabledCheck = true)]
+    [LoggerMessage(LogLevel.Information, Message = "Ping {range}")]
     partial void LogMessage(int range);
 }
